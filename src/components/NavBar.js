@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 function NavBar(props) {
     let { shortenArray } = props;
     const [languageInput, setLanguageInput] = useState("");
-    const [nameInput, setNameInput] = useState();
+    const [nameInput, setNameInput] = React.useState();
 
     let langInputHandler = (e) => {
         setLanguageInput(e.target.value);
